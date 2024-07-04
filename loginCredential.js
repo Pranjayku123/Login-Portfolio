@@ -6,7 +6,7 @@ async function getData() {
         const json = await response.json();
         // console.log(json);
         const container = document.getElementById('product-container');
-        json.productKey.forEach(product => {
+        json.productKey.map(product => {
             if (product.Addition >= "03") {
                 const productDiv = document.createElement('div');
                 productDiv.classList.add('product');
@@ -20,7 +20,7 @@ async function getData() {
                 container.appendChild(productDiv);
             }
         });
-        console.log(json);
+        console.log(json); 
     } catch (error) {
         console.error(error.message);
     }
