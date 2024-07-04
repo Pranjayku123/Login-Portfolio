@@ -4,11 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="loginCredential.js"></script>
+    <style>
+        #product-container {
+            display:grid;
+            grid-template-columns:repeat(6,1fr);
+            border:4px dashed #8d1616;
+            padding:10px;
+            margin:10px;
+            flex-wrap:wrap;
+            height: 95vh;;
+            overflow-y: auto;    
+        }
+        .product{
+            display:flex;
+            flex-direction:column;
+            border:2px solid #0b4a99;
+            width:auto;
+            padding:6px;
+            margin:6px;
+        }
+    </style>
 </head>
 <body>
-    <div class="loginMainWarraper">
-        
-    </div>
+    <div id="product-container"></div>
+    <script src="loginCredential.js"></script>
 </body>
 </html>
